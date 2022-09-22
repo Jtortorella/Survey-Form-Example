@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is our company's survey. Please complete this survey so we can become a better company with your feedback. Thank you!</p>
+
+  <form id="survey-form">
+<fieldset>
+  <legend>Personal Information</legend>
+    <label for="name" id="name-label">Full Name: <input required placeholder="i.e. John Smith" id="name" name="name" type="text"></label>
+
+    <label for="email" id="email-label">Email: <input required placeholder="i.e. johnsmith@gmail.com" id="email" name="name" type="email"></label>
+
+    <label for="number" id="number-label">Age: <input required placeholder="i.e. 24" id="number" name="number" type="number" min="17" max="122"></label>
+</fieldset>
+
+<fieldset>
+  <legend> What is your favorite magazine?</legend>
+ <select id="dropdown">
+  <option value="noneselected">Select Here!</option>
+  <option value="Our Magazine">Our Magazine</option>
+    <option value="Southern Living">Southern Living</option>
+        <option value="People">People</option>
+        <option value="NatGeo">National Geographic</option>
+  </select>
+</fieldset>
+<fieldset>
+  <legend>Would you recommend our magazine to your friends?</legend>
+    <label>Yes, I would. <input type="radio" 
+    value="yes" name="happy-unhappy"> </label>
+    <label>No, I would not.<input value="no" type="radio" name="happy-unhappy"> </label>
+    <label>Maybe.<input value ="maybe" type="radio" name="happy-unhappy"> </label>
+</fieldset>
+   
+   <fieldset>
+     <legend>How would you rate the overall experience?</legend>
+  <label><input value="5" type="checkbox"> 5 (highest)</label>
+  <label><input value="4" type="checkbox"> 4 </label>
+  <label><input value="3" type="checkbox"> 3 </label>
+  <label><input value="2" type="checkbox"> 2</label>
+  <label><input value="1" type="checkbox"> 1 (lowest)</label>
+  <textarea value="additional comments"  placeholder="I really enjoyed the way the company..."></textarea>
+  </fieldset>
+
+  <input id="submit" type="submit">
+    </form>
+</body>
+</html>
